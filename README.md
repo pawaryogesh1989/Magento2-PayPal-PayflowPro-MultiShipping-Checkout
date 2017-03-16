@@ -1,13 +1,12 @@
 # Magento2-PayPal-PayflowPro-MultiShipping-Checkout
-Using this extension, you can use "PayPal PayflowPro" payment method at Multi Shipping checkout.
+Using this extension, you can use ["PayPal PayflowPro"](https://www.paypal.com/us/webapps/mpp/payflow-payment-gateway) payment method at Multi Shipping checkout.
 
-PayPal Payflow Pro Payment Gateway is a service that sends credit card information from a website to the credit card payment networks for processing, and returns transaction details and responses from the payment networks back to the website. In this method credit card information is sent or from a checkout page hosted on your own website.
+[PayPal Payflow Pro](https://www.paypal.com/us/webapps/mpp/payflow-payment-gateway) Payment Gateway is a service that sends credit card information from a website to the credit card payment networks for processing, and returns transaction details and responses from the payment networks back to the website. In this method credit card information is sent or from a checkout page hosted on your own website.
 
-To use this extension you need to have a PayPal Payflow Pro account. If you don't have an account then you can sign up for a new account.
+To use this extension you need to have a PayPal Payflow Pro account. If you don't have an account then you can [sign up](https://registration.paypal.com/pro20PayPalCreateAccount.do) for a new account.
 
-Features and Pricing for using PayPal Payflow Pro can be found out here.
+Features and Pricing for using PayPal Payflow Pro can be found out [here](https://www.paypal.com/us/webapps/mpp/product-selection).
 
- 
 
 Almost every payment gateway has transaction fees. PayPal Payflow pro also has transaction fees. Detailed information regarding transaction fees of the gateway can be found out here.
 
@@ -17,30 +16,17 @@ By Default in Magento 1. x versions "PayPal Payflow Pro" payment method was avai
 
 The main benefit of the extension is that user with zero/partial knowledge of coding (user with basic knowledge of handling Magento) can use this plugin with ease. All things are configurable and user does not need to code or make changes in any of the files. Also, we have a good documentation that would certainly help/assist you if needed. 
 
-Key Features of the Extension are as follows:
+### Key Features of the Extension are as follows:
 
- 
-
-Easy to install
-
-Easily Enable and Disable module.
-
-Can add custom title.
-
-Can set “Sandbox” mode for testing.
-
-Option to set “Payment Action”.
-
-Option to configure Types of cards accepted for payment.
-
-Option to configure allow specific countries only to use the payment gateway.
-
-Supports all responsive themes and layouts.
-
-Easy to use and configure.
-
-Does not save card details.
-
-Single orders can be refunded from the multiple shipping orders.
-
-Separate orders for different shipping address are created in backend.
+- Easy to install
+- Easily Enable and Disable module.
+- Can add custom title.
+- Can set “Sandbox” mode for testing.
+- Option to set “Payment Action”.
+- Option to configure Types of cards accepted for payment.
+- Option to configure allow specific countries only to use the payment gateway.
+- Supports all responsive themes and layouts.
+- Easy to use and configure.
+- Does not save card details.
+- Single orders can be refunded from the multiple shipping orders.
+- Separate orders for different shipping address are created in backend.
