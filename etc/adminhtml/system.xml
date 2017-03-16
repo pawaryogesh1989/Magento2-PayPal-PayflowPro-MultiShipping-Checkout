@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="clarion_payflowpro" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Clarion Payflowpro</label>
+                <comment>
+                    <![CDATA[Accept credit/debit cards payments in your Magento store.]]>
+                </comment>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Clarion Payflowpro</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <validate>required-entry</validate>
+                </field>               
+                <field id="clarion_email" translate="label" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Email Associated with PayPal Merchant Account (Optional)</label>                                 
+                </field>
+                <field id="clarion_partner" translate="label" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Partner</label>                   
+                    <validate>required-entry</validate>                  
+                </field>
+                <field id="clarion_user" translate="label" type="obscure" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>User</label> 
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    <validate>required-entry</validate>                  
+                </field>
+                <field id="clarion_vendor" translate="label" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Vendor</label>
+                    <validate>required-entry</validate>                    
+                </field>
+                <field id="clarion_password" translate="label" type="obscure" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Password</label> 
+                    <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+                    <validate>required-entry</validate>                  
+                </field>
+                <field id="clarion_environment" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Test Mode</label>
+                    <source_model>Clarion\Payflowpro\Model\Source\Environment</source_model>                   
+                </field>
+                <field id="clarion_cctypes" translate="label" type="multiselect" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Credit Card Types</label>
+                    <source_model>Clarion\Payflowpro\Model\Source\Cctype</source_model>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="payment_action" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment Action</label>
+                    <source_model>Clarion\Payflowpro\Model\Source\PaymentAction</source_model>
+                </field>
+                <field id="allowspecific" translate="label" type="allowspecific" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Applicable Countries</label>
+                    <source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Specific Countries</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                </field>         
+            </group>
+        </section>
+    </system>
+</config>

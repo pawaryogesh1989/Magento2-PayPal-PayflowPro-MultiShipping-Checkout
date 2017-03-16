@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <clarion_payflowpro>
+                <active>1</active>
+                <cctypes>AE,VI,MC,DI</cctypes>
+                <model>Clarion\Payflowpro\Model\Payflowpro</model>                              
+                <title>Payflowpro</title>                
+                <allowspecific>0</allowspecific> 
+                <partial_authorization_checksum_checking>1</partial_authorization_checksum_checking>                                                
+            </clarion_payflowpro>
+        </payment>
+    </default>
+</config>

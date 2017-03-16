@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Clarion\Payflowpro\Model\ConfigProvider" type="Magento\Payment\Model\CcGenericConfigProvider">
+        <arguments>
+            <argument name="methodCodes" xsi:type="array">
+                <item name="clarion_payflowpro" xsi:type="const">Clarion\Payflowpro\Model\Payflowpro::CODE</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="ClarionCcConfigProviderPayflowpro" type="Magento\Payment\Model\IframeConfigProvider">
+        <arguments>
+            <argument name="clarion_payflowpro" xsi:type="const">Clarion\Payflowpro\Model\Payflowpro::CODE</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="clarion_payflow_cc_config_provider" xsi:type="object">ClarionCcConfigProviderPayflowpro</item>
+            </argument>
+        </arguments>
+    </type>	    
+</config>
